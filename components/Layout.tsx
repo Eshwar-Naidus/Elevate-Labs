@@ -5,7 +5,8 @@ import {
   FileText, 
   TrendingUp, 
   Menu,
-  X
+  X,
+  FileBadge
 } from 'lucide-react';
 import { AppRoute } from '../types';
 
@@ -19,10 +20,11 @@ export const Layout: React.FC<LayoutProps> = ({ currentRoute, onNavigate, childr
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
   const navItems = [
-    { id: AppRoute.DASHBOARD, label: 'Overview & Guidance', icon: LayoutDashboard },
+    { id: AppRoute.DASHBOARD, label: 'Overview & Guidelines', icon: LayoutDashboard },
     { id: AppRoute.CAREER_COUNSELLOR, label: 'AI Career Counsellor', icon: MessageSquare },
     { id: AppRoute.TEXT_SUMMARIZER, label: 'AI Writer & Summarizer', icon: FileText },
     { id: AppRoute.STOCK_PREDICTOR, label: 'Stock Trend Prediction', icon: TrendingUp },
+    { id: AppRoute.RESUME_OPTIMIZER, label: 'Smart Resume Optimizer', icon: FileBadge },
   ];
 
   const handleNav = (route: AppRoute) => {

@@ -4,6 +4,7 @@ import { Dashboard } from './pages/Dashboard';
 import { CareerCounsellor } from './pages/CareerCounsellor';
 import { TextSummarizer } from './pages/TextSummarizer';
 import { StockPredictor } from './pages/StockPredictor';
+import { ResumeOptimizer } from './pages/ResumeOptimizer';
 import { AppRoute } from './types';
 
 const App: React.FC = () => {
@@ -19,6 +20,8 @@ const App: React.FC = () => {
         return <TextSummarizer />;
       case AppRoute.STOCK_PREDICTOR:
         return <StockPredictor />;
+      case AppRoute.RESUME_OPTIMIZER:
+        return <ResumeOptimizer />;
       default:
         return <Dashboard />;
     }
